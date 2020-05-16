@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SixtwareApp.Clases.Login"
+             BackgroundImageSource="fondoc.png"
+             Title="Modo">
+    <ContentPage.Content>
+        <Frame BorderColor="#ffc525" Margin="10" BackgroundColor="Black" Opacity=".8" HasShadow="True">
+            <StackLayout>
+                <StackLayout x:Name="imagen" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Image Source="logo.png" WidthRequest="200" HeightRequest="200" Margin="0"/>
+                    <Image Source="cc.png" WidthRequest="250" HeightRequest="125" Margin="0"/>
+                </StackLayout>
+                <StackLayout x:Name="login" VerticalOptions="Start">
+                    <Label Text="Iniciar sesión" TextColor="White" Style="{StaticResource ProfileNameLabel}" FontSize="25"/>
+                </StackLayout>
+                <StackLayout x:Name="entrys" VerticalOptions="Start">
+                    <Entry x:Name="name" TextColor="White" Placeholder="Usuario" PlaceholderColor="White" BackgroundColor="Black" Opacity=".7"/>
+                    <Entry x:Name="pass" TextColor="White" Placeholder="Contraseña" PlaceholderColor="White" BackgroundColor="Black" Opacity=".7"/>
+                    <Picker x:Name="tipo" TextColor="White" BackgroundColor="Black" Opacity=".7" Title="Modo" TitleColor="White">
+                        <Picker.Items>
+                            <x:String>Sucursal</x:String>
+                            <x:String>Corporativo</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <ListView x:Name="aa" IsVisible="False" RowHeight="200" VerticalOptions="EndAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label x:Name="aaa" Text="{Binding LOGIN}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackLayout x:Name="boton" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="10">
+                    <Button Text="Iniciar sesión" Style="{StaticResource FollowButton}" WidthRequest="300" x:Name="entrar" Clicked="entrar_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

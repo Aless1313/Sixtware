@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+             mc:Ignorable="d"
+             x:Class="SixtwareApp.Views.Sucursal"
+             Title="Almacen Sucursal">
+
+    <Frame BorderColor="Green"
+                   Margin="10"
+                   BackgroundColor="Black" Opacity=".8" HasShadow="True">
+        <StackLayout>
+            <StackLayout>
+                <Label Text="SUCURSAL" Style="{StaticResource ProfileNameLabel}" TextColor="White"/>
+            </StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Sucursal" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0" HorizontalOptions="StartAndExpand"/>
+                            <Picker x:Name="sucursal" BackgroundColor="Gray" Opacity=".5" TextColor="White" Grid.Column="1" Title="Seleccione" >
+                                <Picker.Items>
+                                    <x:String>Sucursal 1</x:String>
+                                    <x:String>Sucursal 2</x:String>
+                                    <x:String>Sucursal 3</x:String>
+                                    <x:String>Sucursal 4</x:String>
+                                    <x:String>Sucursal 5</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Jabon" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0" HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="jabon" TextColor="White" Opacity=".5" BackgroundColor="Gray" Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Platos" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="platos" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Vasos" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="vasos" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Cucharas" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="cucharas" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="5"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Servilletas" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="servilletas" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="6"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Bolsas" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="bolsas" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="7"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Caja de hamburguesa" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="cajahamburguesa" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="8"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Verduras" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="verduras" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="9"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Pan" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="pan" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="10"  Padding="3,0,3,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Carne" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="carne" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="11">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Aderezos" TextColor="White"  Style="{StaticResource ProfileTagLabel}" Grid.Column="0"  HorizontalOptions="StartAndExpand"/>
+                            <numeric:SfNumericUpDown x:Name="aderezos" TextColor="White" Opacity=".5" BackgroundColor="Gray"  Grid.Column="1" FormatString="n" Minimum="0" MaximumDecimalDigits ="0"/>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" Padding="10,0,10,10">
+                <Label Text="Corpororativo"/>
+                <Button Text="Agregar" Style="{StaticResource FollowButton}" Padding="5,1,5,1" x:Name="ag" Clicked="ag_Clicked"/>
+                <Button Text="Escanear" Style="{StaticResource FollowButton}" Padding="5,1,5,1" x:Name="suc" Clicked="suc_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </Frame>
+</ContentPage>

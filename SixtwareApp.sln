@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixtwareApp.Android", "SixtwareApp.Android\SixtwareApp.Android.csproj", "{98612E06-DB19-496C-AA98-D5F97C8F7E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixtwareApp", "SixtwareApp\SixtwareApp.csproj", "{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98612E06-DB19-496C-AA98-D5F97C8F7E14}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F835CA6C-D8BA-4ECA-89EE-DF3D17D606C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9E906C4-BB50-469F-B691-D83D9BFE5A58}
+	EndGlobalSection
+EndGlobal
